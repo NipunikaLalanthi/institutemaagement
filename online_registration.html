@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Registration Form</title>
+   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="index.html">Lyonsdown<span class="text-success">CAMPUS</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+             <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                 <li class="nav-item"><a class="nav-link" href="facalties_details.html">Faculties & Departments </a></li>
+                <li class="nav-item"><a class="nav-link" href="courses_details.html">Courses </a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Apply Now
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="online_registration.html">Online Registration</a>
+                        <a class="dropdown-item" href="terms.html">Terms of Service</a>
+                        <a class="dropdown-item" href="faq.html">FAQ</a>
+                        <a class="dropdown-item" href="blog.html">Blog</a>
+                        <a class="dropdown-item" href="portfolio.html">Portfolio</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="header-social-links d-flex ml-auto pt-3 pt-md-0 ">
+                <a href="https://web.facebook.com/login/?_rdc=1&_rdr" class="facebook"><i
+                        class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/accounts/login/?hl=en" class="instagram"><i
+                        class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/login" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                <a href="https://x.com/twitt_login" class="twitter"><i class="bi bi-twitter"></i></a>
+            </div>
+            <a class="btn btn-sm btn-outline-success ml-3" href="loginpage.html">Login</a>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="container-fluid form-container">
+                <div class="card-body">
+                    <h2 class="card-title text-center">Online Registration Form</h2>
+                    <form id="studentForm" action="" method="post">
+                        <div class="form-group">
+                            <label>Student Full Name</label>
+                            <input name="student_name" type="text" class="form-control"
+                                placeholder="Enter Your Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Student Email Address</label>
+                            <input name="email_address" type="email" class="form-control"
+                                placeholder="Enter Your E-Mail Address" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Student Telephone Number</label>
+                            <input name="tp_number" type="tel" class="form-control"
+                                placeholder="Enter Your Telephone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Student DOB</label>
+                            <input name="student_dob" type="date" class="form-control" placeholder="Enter Your Birthday"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label>Select Your Course</label>
+                            <select id="student_course" name="student_course" class="form-control select2" required>
+                                <option value="BA (General) Degree">BA (General) Degree</option>
+                                <option value="BA Special Degree in Buddhist Leadership">BA Special Degree in Buddhist
+                                    Leadership</option>
+                                <option value="BA Special Degree in Pali Studies">BA Special Degree in Pali Studies
+                                </option>
+                                <option value="Bachelor of Business Management (Honours) Degree">Bachelor of Business
+                                    Management (Honours) Degree</option>
+                                <option value="Bachelor of Performing Arts (Honours) in Kandyan Dance">Bachelor of
+                                    Performing Arts (Honours) in Kandyan Dance</option>
+                                <option value="Bachelor of Science in Information Technology">Bachelor of Science in
+                                    Information Technology</option>
+                                <option value="B. Tech. in Information Technology & Communication">B. Tech. in
+                                    Information Technology & Communication</option>
+                            </select>
+                        </div>
+                        <input type="submit" class="btn btn-info" value="Submit Form">
+                        <input type="reset" class="btn btn-warning" value="Reset">
+                        <div class="row">
+                            <div id="toast_msg" class="toast" role="alert" aria-live="assertive" aria-atomic="true"
+                                style="position: absolute; top: 20px; right: 20px;">
+                                <div class="toast-body"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div id="studentCardContainer" class="mt-5"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Details Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="index.html">Lyonsdown<span class="text-success">CAMPUS</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                 <li class="nav-item"><a class="nav-link" href="facalties_details.html">Faculties & Departments </a></li>
+                <li class="nav-item"><a class="nav-link" href="courses_details.html">Courses </a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Apply Now
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="online_registration.html">Online Registration</a>
+                        <a class="dropdown-item" href="terms.html">Terms of Service</a>
+                        <a class="dropdown-item" href="faq.html">FAQ</a>
+                        <a class="dropdown-item" href="blog.html">Blog</a>
+                        <a class="dropdown-item" href="portfolio.html">Portfolio</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="header-social-links d-flex ml-auto pt-3 pt-md-0 ">
+                <a href="https://web.facebook.com/login/?_rdc=1&_rdr" class="facebook"><i
+                        class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/accounts/login/?hl=en" class="instagram"><i
+                        class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/login" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                <a href="https://x.com/twitt_login" class="twitter"><i class="bi bi-twitter"></i></a>
+            </div>
+            <a class="btn btn-sm btn-outline-success ml-3" href="loginpage.html">Login</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                        <span class="navbar-toggler-icon"></span>
+                    </button> <a class="navbar-brand" href="#">Staff Details</a>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <form class="form-inline" id="searchForm">
+                            <input class="form-control mr-sm-2" type="text" id="searchInput"
+                                placeholder="Search Details" />
+                            <div class="col-auto">
+                                <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+                                <button class="btn btn-secondary my-2 my-sm-0" type="button"
+                                    id="resetButton">Reset</button>
+                            </div>
+                        </form>
+                    </div>
+                </nav>
+                <div class="row">
+                    <div class="col-md-12">
+                        <table class="table table-info">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Full Name</th>
+                                    <th>Address</th>
+                                    <th>Telephone Number</th>
+                                    <th>DOB</th>
+                                    <th>Qualification</th>
+                                    <th style="text-align: center;">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="staffTable">
+                                <tr class="table-warning">
+                                    <td>1</td>
+                                    <td>John Doe</td>
+                                    <td>123 Main St, Cityville</td>
+                                    <td>555-1234</td>
+                                    <td>1995-01-15</td>
+                                    <td>Bachelor of Science</td>
+                                   <td><button class="btn btn-sm btn-primary">Update</button>
+                                        <button class="btn btn-sm btn-warning">View</button>
+                                        <button class="btn btn-sm btn-danger">Detele</button></td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>2</td>
+                                    <td>Jane Smith</td>
+                                    <td>456 Oak Ave, Townsville</td>
+                                    <td>555-5678</td>
+                                    <td>1997-03-22</td>
+                                    <td>Master of Arts</td>
+                                   <td><button class="btn btn-sm btn-primary">Update</button>
+                                        <button class="btn btn-sm btn-warning">View</button>
+                                        <button class="btn btn-sm btn-danger">Detele</button></td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>3</td>
+                                    <td>Michael Johnson</td>
+                                    <td>789 Pine Rd, Villageville</td>
+                                    <td>555-8765</td>
+                                    <td>1992-11-10</td>
+                                    <td>Ph.D. in Engineering</td>
+                                   <td><button class="btn btn-sm btn-primary">Update</button>
+                                        <button class="btn btn-sm btn-warning">View</button>
+                                        <button class="btn btn-sm btn-danger">Detele</button></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>4</td>
+                                    <td>Emily Davis</td>
+                                    <td>321 Cedar St, Hamlet</td>
+                                    <td>555-4321</td>
+                                    <td>1994-07-08</td>
+                                    <td>Bachelor of Arts</td>
+                                   <td><button class="btn btn-sm btn-primary">Update</button>
+                                        <button class="btn btn-sm btn-warning">View</button>
+                                        <button class="btn btn-sm btn-danger">Detele</button></td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>5</td>
+                                    <td>Chris Wilson</td>
+                                    <td>654 Elm Dr, Suburbia</td>
+                                    <td>555-6789</td>
+                                    <td>1996-09-25</td>
+                                    <td>Master of Science</td>
+                                   <td><button class="btn btn-sm btn-primary">Update</button>
+                                        <button class="btn btn-sm btn-warning">View</button>
+                                        <button class="btn btn-sm btn-danger">Detele</button></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>6</td>
+                                    <td>Jessica Brown</td>
+                                    <td>987 Maple Ln, Metro City</td>
+                                    <td>555-9876</td>
+                                    <td>1998-05-17</td>
+                                    <td>Bachelor of Commerce</td>
+                                   <td><button class="btn btn-sm btn-primary">Update</button>
+                                        <button class="btn btn-sm btn-warning">View</button>
+                                        <button class="btn btn-sm btn-danger">Detele</button></td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>7</td>
+                                    <td>David Lee</td>
+                                    <td>159 Birch Blvd, Uptown</td>
+                                    <td>555-5432</td>
+                                    <td>1993-02-03</td>
+                                    <td>Master of Business Administration</td>
+                                   <td><button class="btn btn-sm btn-primary">Update</button>
+                                        <button class="btn btn-sm btn-warning">View</button>
+                                        <button class="btn btn-sm btn-danger">Detele</button></td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>8</td>
+                                    <td>Ashley Moore</td>
+                                    <td>753 Spruce St, Downtown</td>
+                                    <td>555-6543</td>
+                                    <td>1995-12-12</td>
+                                    <td>Bachelor of Education</td>
+                                   <td><button class="btn btn-sm btn-primary">Update</button>
+                                        <button class="btn btn-sm btn-warning">View</button>
+                                        <button class="btn btn-sm btn-danger">Detele</button></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>9</td>
+                                    <td>Matthew Clark</td>
+                                    <td>852 Redwood Dr, Countryside</td>
+                                    <td>555-7890</td>
+                                    <td>1997-04-20</td>
+                                    <td>Doctor of Medicine</td>
+                                    <td><button class="btn btn-sm btn-primary">Update</button>
+                                        <button class="btn btn-sm btn-warning">View</button>
+                                        <button class="btn btn-sm btn-danger">Detele</button></td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>10</td>
+                                    <td>Sarah Taylor</td>
+                                    <td>951 Willow Rd, Lakeside</td>
+                                    <td>555-2109</td>
+                                    <td>1999-08-30</td>
+                                    <td>Bachelor of Fine Arts</td>
+                                   <td><button class="btn btn-sm btn-primary">Update</button>
+                                        <button class="btn btn-sm btn-warning">View</button>
+                                        <button class="btn btn-sm btn-danger">Detele</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('searchForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            let input = document.getElementById('searchInput').value.toLowerCase();
+            let rows = document.querySelectorAll('#staffTable tr');
+
+            rows.forEach(row => {
+                let text = row.textContent.toLowerCase();
+                if (text.indexOf(input) > -1) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+        document.getElementById('resetButton').addEventListener('click', function () {
+            document.getElementById('searchInput').value = '';
+            let rows = document.querySelectorAll('#staffTable tr');
+
+            rows.forEach(row => {
+                row.style.display = '';
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
